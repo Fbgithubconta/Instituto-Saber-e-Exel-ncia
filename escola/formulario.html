@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/escola.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <form action="" method="post">
+                <fieldset class="dados">
+                    <legend>Dados pessoais</legend>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                        <label>Data de nascimento</label>
+                        <input type="date" name="data" required min="2021-01-01" required>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+                    
+                        <label for="">Número</label>
+                        <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Informações de matrícula</legend>
+                   <div class="nivel">
+                    <h2>Nível escolar</h2>
+                            <select name="nivel" id="nivel" >
+                                <option>Ensino médio</option>
+                                <option>Fundamental II</option>
+                                <option>Fundamental I</option>
+                            </select>
+                   </div>
+                        <div class="turno">
+                            <h2>Turno:</h2>
+                                <div>
+                                    <label for="manha-sim">Manhã</label>
+                                    <input type="radio" name="manha" id="manha-sim" value="manha">
+                                </div>
+                                <div>
+                                    <label for="tarde-sim">Tarde</label>
+                                    <input type="radio" name="tarde" id="tarde-sim" value="tarde">
+                                </div>
+                                <div>
+                                    <label for="">Noite</label>
+                                    <input type="radio" name="noite" id="noite-sim" value="noite">
+                                </div>
+                        </div>
+                            <div class="atividades">
+                                <h2>Atividades Extracurriculares:</h2>
+                                    <h3>Esportes</h3>
+                                
+                                        <label for="futebol-sim">Futebol</label>
+                                        <input type="checkbox" name="futebol" id="futebol-sim" value="futebol">
+                                
+                                
+                                        <label for="basquete-sim">Basquete</label>
+                                        <input type="checkbox" name="basquete" id="basquete-sim" value="basquete">
+                                
+                                        <label for="atletismo-sim">Atletismo</label>
+                                        <input type="checkbox" name="atletismo" id="atletismo-sim" value="atletismo">
+                                
+                                
+                                    <h3>Artes:</h3>
+                                        <label for="teatro-sim">Teatro</label>
+                                        <input type="checkbox" name="teatro" id="teatro-sim" value="teatro">
+                                
+                                        <label for="musica-sim">Música </label>
+                                        <input type="checkbox" name="musica" id="musica-sim" value="musica">
+                                
+                                        <label for="danca-sim">Dança</label>
+                                        <input type="checkbox" name="danca" id="danca-sim" value="danca">
+                                    <h3>Tecnologia e ciências</h3>
+                                
+                                        <label for="programacao-sim">Programação</label>
+                                        <input type="checkbox" name="programacao" id="programacao-sim" value="programacao">
+                                        <label for="laboratorio-sim">Laboratório</label>
+                                        <input type="checkbox" name="laboratorio" id="laboratorio-sim" value="laboratorio">
+                                        <label for="astronomia-sim">Clube de astronomia</label>
+                                        <input type="checkbox" name="astronomia" id="astronomia-sim">
+                            </div>
+                    </fieldset>
+                        <button type="submit">Matricular-se</button>
+                        <button><a href="instituto.html">Voltar</a></button>
+         </form>
+    </main>
+</body>
+</html>
